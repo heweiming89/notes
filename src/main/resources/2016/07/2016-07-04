@@ -1,0 +1,12 @@
+2016年7月4日 20:56:30
+
+IDEA 快捷操作
+sout=System.out.println();
+ 
+soutp=System.out.println("");
+ 
+soutv=System.out.println("变量名 = " + 变量);
+ 
+soutm=System.out.println("当前类名.当前方法");
+ 
+psvm=public static void main(String[] args) {}
