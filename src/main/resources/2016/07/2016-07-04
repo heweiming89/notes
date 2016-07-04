@@ -10,3 +10,68 @@ soutv=System.out.println("变量名 = " + 变量);
 soutm=System.out.println("当前类名.当前方法");
  
 psvm=public static void main(String[] args) {}
+
+CSS 选择器
+	*						选取所有元素
+	<type>					选取指定类型的元素
+	.<class>				选取指定类的元素
+	#<id>					选取id属性为指定值的元素
+	[attr]					选取定义了attr属性,且属性值任意的元素
+	[attr="val"]			选取定义了attr属性,且属性值为val的元素
+	[attr^="val"]			选取定义了attr属性,且属性值以val字符串打头的元素
+	[attr$="val"]			选取定义了attr属性,且属性值以val结尾的元素
+	[attr*="val"]			选取定义了attr属性,且属性值包含val字符串的元素
+	[attr~="val"]			选取定义了attr属性,且属性值包含多个值,而其中一个为val的元素
+	[attr|="val"]			选取定义了attr属性,且属性值是以连字符分割的一串值,而第一个为val的元素
+	
+	<选择器>,<选择器>			选取同时匹配所有选择器的元素
+	<选择器> <选择器>			目标元素为匹配第一个选择器的元素的后代,且匹配第二个元素
+	<选择器> > <选择器>		目标元素为匹配第一个选择器的元素的直接后代,且匹配第二个选择器
+	<选择器> + <选择器>		目标元素紧跟在匹配第一个选择器的元素之后,且匹配第二个选择器
+	<选择器> ~ <选择器>		目标元素跟在匹配第一个选择器的元素之后,且匹配第二个选择器
+	
+	::first-line			选取块级元素文本的首行
+	::first-letter			选取块级元素文本的首字母
+	
+	:before					在选取元素之前或之后插入内容
+	:after
+	
+	:root 					选取文档中的根元素
+	:first-child			选取元素的第一个子元素
+	:last-child				选取元素的最后一个子元素
+	:only-child				选取元素的唯一一个子元素
+	:only-of-type			选取属于父元素的特定类型的唯一子元素
+	:nth-child(n)			选取父元素的第n个子元素
+	:nth-last-child(n)		选取父元素的倒数第n个子元素
+	:nth-of-type(n)			选取属于父元素的特定类型的第n个子元素
+	:nth-last-of-type(n)	选取属于父元素的特定类型的倒数第n个子元素
+	
+	:enabled				选取已起用的元素
+	:disabled				选取被禁用的元素
+	:checked				选取所有选中的复选框和单选按钮
+	:default				选取默认元素
+	
+	:valid					选取基于输入验证判定的有效的input元素
+	:invalid				选取基于输入验证判定的无效的input元素
+	
+	:in-range				选取被限定在指定范围之内的input元素
+	:out-of-range			选取被限定在指定范围之外的input元素
+	
+	:required				
+	:optional
+	
+	:link
+	:visited
+	:hover
+	:active
+	
+	:focus
+	:not(<选择器>)
+	:empty
+	:lang(<语言>)
+	:target
+
+
+
+
+
